@@ -53,6 +53,10 @@ public class Cat {
 		System.out.println("Кот гуляет");
 	}
 
+	public void test() {
+
+	}
+
 	public void printAge() {
 		System.out.println("Кот " + nickname + " age " + age);
 	}
