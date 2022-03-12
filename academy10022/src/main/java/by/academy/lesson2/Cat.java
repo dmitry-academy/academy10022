@@ -61,4 +61,16 @@ public class Cat {
 		System.out.println("Кот " + nickname + " age " + age);
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Cat [age=");
+		builder.append(age);
+		builder.append(", nickname=");
+		builder.append(nickname);
+		builder.append("]");
+		return builder.toString();
+	}
+	
+
 }

@@ -7,8 +7,9 @@ public class BitwiseOperations {
 		// 1. Четность числа
 		System.out.println("Четность числа");
 		System.out.println(5 & 1); // результат 1 - нечетное
-		System.out.println(6 & 1); // результат 0 - нечетное
-
+		System.out.println(6 & 1); // результат 0 - четное
+//5 % 2 == 0
+		
 		// 2. Деление/умножение на 2
 		System.out.println("Деление на 2");
 		System.out.println(32 >> 1);
