@@ -5,7 +5,7 @@ public class BreakLoop1 {
 		int i = 13;
 
 		int result = 0;
-		while (i < 100) {
+		while (i <= 100) {
 			if (i % 12 == 0) {
 				result = i;
 				System.out.println("STOP");

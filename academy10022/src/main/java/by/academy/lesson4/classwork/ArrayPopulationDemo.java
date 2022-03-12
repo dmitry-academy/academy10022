@@ -1,6 +1,5 @@
 package by.academy.lesson4.classwork;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class ArrayPopulationDemo {
@@ -9,7 +8,7 @@ public class ArrayPopulationDemo {
 		Random rand = new Random();
 
 		for (int i = 0; i < array.length; i++) {
-			array[i] = rand.nextInt(20) - 10;
+			array[i] = rand.nextInt(10);
 		}
 
 		System.out.println("initial array:");

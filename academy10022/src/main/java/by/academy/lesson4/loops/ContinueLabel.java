@@ -3,7 +3,6 @@ package by.academy.lesson4.loops;
 public class ContinueLabel {
 	public static void main(String[] args) {
 		outer: for (int i = 0; i < 10; i++) {
-			//////////////
 
 			for (int j = 0; j < 10; j++) {
 				if (j > i) {
@@ -13,7 +12,6 @@ public class ContinueLabel {
 				System.out.print(" " + (i * j));
 			}
 
-			//////////////
 		}
 		System.out.println();
 	}

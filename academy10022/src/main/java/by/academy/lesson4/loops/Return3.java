@@ -3,7 +3,7 @@ package by.academy.lesson4.loops;
 public class Return3 {
 
 	public static void main(String... args) {
-		printFirstFiveElements(1000);
+		printFirstFiveElements(4);
 		System.out.println("Hello from main!");
 	}
 
