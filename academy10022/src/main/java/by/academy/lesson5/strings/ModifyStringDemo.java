@@ -13,5 +13,11 @@ public class ModifyStringDemo {
 		System.out.println("    Hello World           ".stripTrailing());
 		System.out.println("			Hello World ".strip());
 
+		
+		String s = "Hellollo";
+		String s1 = s.replace("ll", "");
+		System.out.println("s: " + s);
+		System.out.println("s1: " + s1);
+
 	}
 }

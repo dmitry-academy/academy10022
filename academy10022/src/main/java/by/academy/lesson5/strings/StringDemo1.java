@@ -5,7 +5,7 @@ public class StringDemo1 {
 
 		String str1 = new String();
 		System.out.println("str1:[" + str1 + "]");
-		
+
 		char[] chars1 = { 'а', 'b', 'с' };
 		String str2 = new String(chars1);
 		System.out.println("str2:" + str2);
@@ -21,5 +21,10 @@ public class StringDemo1 {
 
 		String str5 = new String(str4);
 		System.out.println("str5:" + str5);
+
+		System.out.println(str2 + " " + 1);
+		
+		String str6 = str2.concat("Hello World!");
+		System.out.println(str6);
 	}
 }
