@@ -8,7 +8,7 @@ public class CarDemo {
 		Car car1 = new Car();
 		car1.run();
 
-		new by.academy.lesson5.packages.sub2.Car car2 = new by.academy.lesson5.packages.sub2.Car();
+		by.academy.lesson5.packages.sub2.Car car2 = new by.academy.lesson5.packages.sub2.Car();
 		car2.run();
 	}
 }
