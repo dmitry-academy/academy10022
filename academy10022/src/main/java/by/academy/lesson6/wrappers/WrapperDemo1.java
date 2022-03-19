@@ -15,10 +15,12 @@ public class WrapperDemo1 {
 		Boolean boolean6 = true;
 
 		boolean b = boolean5;
-		
+
 		Integer i1 = new Integer(42);
 		Integer i2 = new Integer("42");
-
+		
+		Integer i = Integer.valueOf(1);
+		
 		Float f1 = new Float(3.14f);
 		Float f2 = new Float("3.14f");
 

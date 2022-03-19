@@ -12,7 +12,6 @@ public class AutoBoxDemo1 {
 		Integer iOb = 100; // упаковать значение int
 		test(in);
 		test(iOb);
-//		test("test");
 		int i = Integer.MAX_VALUE;
 		test(i);
 	}
@@ -21,11 +20,8 @@ public class AutoBoxDemo1 {
 		System.out.println("int: " + i);
 	}
 
-	private static void test(String i) {
-		System.out.println("String");
+	private static void test(Integer i) {
+		System.out.println("Integer:" + i);
 	}
 
-//	private static void test(int i) {
-//		System.out.println("int");
-//	}
 }

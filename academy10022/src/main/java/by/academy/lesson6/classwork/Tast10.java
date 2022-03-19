@@ -21,6 +21,8 @@ public class Tast10 {
 
 			System.out.println(text.substring(start, end));
 		}
+		System.out.println(text.replaceAll("\\s+", " "));
+		
 	}
 
 }

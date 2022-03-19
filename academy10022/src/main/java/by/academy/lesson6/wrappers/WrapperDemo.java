@@ -7,7 +7,6 @@ public class WrapperDemo {
 		test(i);
 		System.out.println(test1());
 		System.out.println(test2());
-
 	}
 
 	private static void test(Integer i) {

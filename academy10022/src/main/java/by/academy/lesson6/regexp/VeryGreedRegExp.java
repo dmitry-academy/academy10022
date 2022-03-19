@@ -5,8 +5,8 @@ import java.util.regex.Pattern;
 
 public class VeryGreedRegExp {
 	public static void main(String[] args) {
-		String text = "Егор Алла Александр";
-		Pattern pattern = Pattern.compile("А.++а");
+		String text = "aaa";
+		Pattern pattern = Pattern.compile("a++b");
 		Matcher matcher = pattern.matcher(text);
 		while (matcher.find()) {
 			System.out.println(text.substring(matcher.start(), matcher.end()));
