@@ -3,6 +3,7 @@ package by.academy.lesson7.deal;
 import java.io.Serializable;
 
 public abstract class Product implements Serializable {
+
 	private static final long serialVersionUID = 1L;
 	protected String type;
 	protected String name;
@@ -21,7 +22,7 @@ public abstract class Product implements Serializable {
 		this.quantity = quantity;
 	}
 
-	protected double getProductPrice() {
+	protected final double getProductPrice() {
 		return price * quantity * getDiscount();
 	}
 
@@ -61,6 +62,21 @@ public abstract class Product implements Serializable {
 
 	public void setQuantity(double quantity) {
 		this.quantity = quantity;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Product [type=");
+		builder.append(type);
+		builder.append(", name=");
+		builder.append(name);
+		builder.append(", price=");
+		builder.append(price);
+		builder.append(", quantity=");
+		builder.append(quantity);
+		builder.append("]");
+		return builder.toString();
 	}
 
 }

@@ -4,7 +4,7 @@ public class Cat extends Animal {
 
 	@Override
 	public void lalala() {
-		System.out.println("lalala!");
+		System.out.println("cat lalala!");
 	}
 
 	@Override

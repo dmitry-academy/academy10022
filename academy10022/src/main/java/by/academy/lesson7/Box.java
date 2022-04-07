@@ -1,23 +1,16 @@
 package by.academy.lesson7;
 
 public class Box {
+
 	double width;
 	double height;
 	double depth;
 
 	public Box() {
 		System.out.println("Конструирование объекта Вох");
-		width = 10;
-		height = 10;
-		depth = 10;
-	}
-
-	public void test() {
-		print();
-	}
-
-	public void print() {
-		System.out.println("Box print" + width);
+		this.width = 10;
+		this.height = 10;
+		this.depth = 10;
 	}
 
 	Box(double depth, double height) {
@@ -40,6 +33,14 @@ public class Box {
 		width = len;
 		height = len;
 		depth = len;
+	}
+
+	public void test() {
+		print();
+	}
+
+	public void print() {
+		System.out.println("Box print" + width);
 	}
 
 	/**

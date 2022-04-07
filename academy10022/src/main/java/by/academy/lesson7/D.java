@@ -6,6 +6,7 @@ public class D extends C {
 
 	public D(String a, int b) {
 		i = a;
+		this.i = a;
 		super.i = b;
 	}
 

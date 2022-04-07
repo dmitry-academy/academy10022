@@ -5,13 +5,13 @@ public class Milk {
 	private static double st;
 	private static String[] arr;
 
-	static {
-		System.out.println("Call static block");
-	}
-
-	{
-		System.out.println("Call simple block");
-	}
+//	static {
+//		System.out.println("Call static block");
+//	}
+//
+//	{
+//		System.out.println("Call simple block");
+//	}
 
 	public Milk() {
 		super();

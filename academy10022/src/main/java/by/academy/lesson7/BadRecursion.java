@@ -12,7 +12,6 @@ public class BadRecursion {
 	}
 
 	public static void main(String[] args) {
-		int i = 0;
-		recursion(i, 5);
+		recursion(0, 5);
 	}
 }

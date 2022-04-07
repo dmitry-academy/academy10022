@@ -4,6 +4,7 @@ public class BoxDemo7 {
 	public static void main(String[] args) {
 		Box myBox1 = new Box();
 		Box myBox2 = new Box();
+		
 		double volume;
 		
 		// присвоить значения переменным экземпляра myBox1

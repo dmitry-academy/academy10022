@@ -21,6 +21,20 @@ public class Toy {
 		this.cost = 9.99;
 	}
 
+	public Toy(String name, int cost, String[] manufacturer) {
+		this();
+		this.name = name;
+		this.cost = cost;
+		this.manufacturer = manufacturer;
+		System.out.println("В конструкторе с тремя параметрами");
+	}
+
+	public Toy(String name, int cost, String[] manufacturer, int age) {
+		this(name, cost, manufacturer);
+		this.age = age;
+		System.out.println("В конструкторе с четырьмя параметрами");
+	}
+
 	public Toy(int age, double cost) {
 		this();
 		this.age = age;
@@ -30,12 +44,6 @@ public class Toy {
 			manufacturer[i] = manufacturer[i] + " alalala";
 		}
 		System.out.println("В конструкторе с тремя параметрами");
-	}
-
-	public Toy(String name, int cost, String[] manufacturer, int age) {
-		this(name, cost, manufacturer);
-		this.age = age;
-		System.out.println("В конструкторе с четырьмя параметрами");
 	}
 
 	public Toy(int cost, String name, String[] manufacturer, int age) {
@@ -57,14 +65,6 @@ public class Toy {
 	public Toy(String name) {
 		this();
 		this.name = name;
-		System.out.println("В конструкторе с тремя параметрами");
-	}
-
-	public Toy(String name, int cost, String[] manufacturer) {
-		this();
-		this.name = name;
-		this.cost = cost;
-		this.manufacturer = manufacturer;
 		System.out.println("В конструкторе с тремя параметрами");
 	}
 

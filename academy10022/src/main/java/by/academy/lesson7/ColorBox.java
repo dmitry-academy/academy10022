@@ -4,7 +4,15 @@ public class ColorBox extends Box {
 	String color;
 
 	double width;
-	
+
+	public ColorBox() {
+		super();
+	}
+
+	public ColorBox(double width, double height, double depth) {
+		super(width, height, depth);
+	}
+
 	public ColorBox(int width, int height, int depth, String color) {
 		this.width = width;
 		this.height = height;
@@ -12,11 +20,12 @@ public class ColorBox extends Box {
 		this.color = color;
 	}
 
-	public ColorBox() {
-	}
-
 	@Override
 	public void print() {
-		System.out.println("ColorBox print" + width);
+		System.out.println("ColorBox print" + color);
+	}
+
+	public void paint() {
+		System.out.println("ColorBox is painting: " + color);
 	}
 }

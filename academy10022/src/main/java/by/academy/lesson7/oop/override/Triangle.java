@@ -5,6 +5,7 @@ public class Triangle extends Figure {
 		super(dim1, dim2);
 	}
 
+	@Override
 	public double area() {
 		System.out.println("B области треугольника.");
 		return dim1 * dim2 / 2;

@@ -14,7 +14,6 @@ public class Cheese extends Product {
 	}
 
 	@Override
-
 	protected double getDiscount() {
 		if (age >= 20) {
 			return 0.8;
