@@ -5,9 +5,9 @@ public class TransportDemo {
 		Moveable moveable = new Transport();
 		Transport transport = new Transport();
 		Moveable robot = new Robot();
-		// Moveable moveable1 = new Moveable();
+//		 Moveable moveable1 = new Moveable();
 
-		// moveable.start();
+//		 moveable.start();
 		moveable.moveRight();
 		moveable.moveLeft();
 		System.out.println();

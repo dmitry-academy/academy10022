@@ -1,19 +1,23 @@
 package by.academy.lesson8.interfaces;
 
 public class Transport implements Moveable {
-    public void moveRight() {
-        System.out.println("Транспорт поворачивает вправо.");
-    }
 
-    public void moveLeft() {
-        System.out.println("Транспорт поворачивает влево.");
-    }
+	@Override
+	public void moveRight() {
+		System.out.println("Транспорт поворачивает вправо.");
+	}
 
-    public void stop() {
-        System.out.println("Транспорт останавливается.");
-    }
+	@Override
+	public void moveLeft() {
+		System.out.println("Транспорт поворачивает влево.");
+	}
 
-    public void start() {
-        System.out.println("Транспорт стартует.");
-    }
+	public void stop() {
+		System.out.println("Транспорт останавливается.");
+	}
+
+	public void start() {
+		System.out.println("Транспорт стартует.");
+	}
+
 }

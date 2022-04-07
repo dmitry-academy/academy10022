@@ -1,6 +1,7 @@
 package by.academy.lesson8.interfaces.ext;
 
 public class FootballImpl implements Football {
+	
 	@Override
 	public void setHomeTeam(String name) {
 		System.out.println("Setting Home Team");
