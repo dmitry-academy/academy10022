@@ -5,11 +5,18 @@ public class City {
 	public int i = 1;
 	public static int j = 2;
 
-	public static class District {
+	public class District {
+
+		int houseNumber = 40;
 
 		public void go() {
+			System.out.println(i);
 			System.out.println(j);
 			System.out.println("Go to the District.");
+		}
+
+		public void printHouseNumber() {
+			System.out.println("House number: " + houseNumber);
 		}
 	}
 
@@ -17,15 +24,4 @@ public class City {
 		System.out.println("allala");
 	}
 
-	public static void main(String[] args) {
-//		Town4.Street street = new Town4.Street();
-//		street.go();
-//		District district = new District();
-//		district.go();
-//		City city = new City();
-//		District district = city.District();
-		
-		City.District district = new City.District();
-		district.go();
-	}
 }

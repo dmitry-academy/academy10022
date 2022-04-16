@@ -18,11 +18,11 @@ public class Average<T extends Number & Comparable<T>> {
 		return sum / array.length;
 	}
 
-	public boolean sameAvg(Average<?> dob) {
-		return average() == dob.average();
-	}
-	
-//	public boolean sameAvg(Average<T> dob) {
+//	public boolean sameAvg(Average<?> dob) {
 //		return average() == dob.average();
 //	}
+	
+	public boolean sameAvg(Average<T> dob) {
+		return average() == dob.average();
+	}
 }

@@ -9,4 +9,6 @@ public interface Flyable {
 	default void stop() {
 		System.out.println("Flyable default method start");
 	}
+
+	void fly();
 }

@@ -2,6 +2,7 @@ package by.academy.lesson10.innerclasses;
 
 public class Town4 {
 
+	int i = 0;
 	static Street s = new Street();
 
 	public static class Street {

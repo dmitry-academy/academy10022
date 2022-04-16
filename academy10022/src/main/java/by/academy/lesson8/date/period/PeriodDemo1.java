@@ -9,7 +9,9 @@ public class PeriodDemo1 {
 		Period period2m = Period.ofMonths(2);
 		Period period14d = Period.ofWeeks(2);
 		Period period2y = Period.ofYears(2);
-
+		
+		Period period5y2m3dNew = period5y4m3d.withMonths(2);
+		
 		System.out.println(period5y4m3d);
 		System.out.println(period2d);
 		System.out.println(period2m);

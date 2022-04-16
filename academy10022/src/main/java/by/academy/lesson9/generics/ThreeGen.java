@@ -16,8 +16,7 @@ import by.academy.lesson7.deal.Product;
 //V должен реализовать интерфейс Serializable и расширять класс Animal, 
 //K должен расширять класс Number.
 
-public class ThreeGen<T extends CharSequence & Comparable<T>, 
-V extends Product & Serializable, K extends Number> {
+public class ThreeGen<T extends CharSequence & Comparable<T>, V extends Product & Serializable, K extends Number> {
 
 	private T objT;
 	private V objV;

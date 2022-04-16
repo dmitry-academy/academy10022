@@ -32,11 +32,11 @@ public class GenMethodDemo {
 		}
 		System.out.println();
 
-//		String[] strArray = { "one", "two", "three", "four", "five" };
-//
-//		if (isIn("two", strArray)) {
-//			System.out.println("two входит в массив strArray");
-//		}
+		String[] strArray = { "one", "two", "three", "four", "five" };
+
+		if (isIn(2, strArray)) {
+			System.out.println("two входит в массив strArray");
+		}
 
 //		if (!isIn("seven", strArray)) {
 //			System.out.println("seven не входит в массив strArray");

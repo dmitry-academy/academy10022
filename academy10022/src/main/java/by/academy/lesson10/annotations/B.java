@@ -1,6 +1,6 @@
 package by.academy.lesson10.annotations;
 
-@Version(info = "qweqwe")
+@Version(info = "Hello world", minArgs = 10, aliases = { "Hello", "World" })
 public class B extends A {
 
 	@Deprecated

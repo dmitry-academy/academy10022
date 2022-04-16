@@ -14,7 +14,6 @@ public class Town {
 	}
 
 	private class Street {
-
 		private int house;
 		private int houseNumber = 2;
 
@@ -30,11 +29,11 @@ public class Town {
 		public class House {
 			private int x = 0;
 
-			public void test(int x) {
-				System.out.println(x);
-				System.out.println(this.x);
-				System.out.println(Street.this.houseNumber);
-				System.out.println(Town.this.x);
+			public void test(int y) {
+				System.out.println(x); //1
+				System.out.println(this.x);//0
+				System.out.println(Street.this.houseNumber);//2
+				System.out.println(Town.this.x);//3
 			}
 		}
 

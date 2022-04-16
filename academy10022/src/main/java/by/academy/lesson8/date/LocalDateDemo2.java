@@ -11,6 +11,7 @@ public class LocalDateDemo2 {
 		int year = today.getYear();
 		int month = today.getMonthValue();
 		Month monthAsEnum = today.getMonth(); // как перечисление
+		
 		int dayYear = today.getDayOfYear();
 		int dayMonth = today.getDayOfMonth();
 		DayOfWeek dayWeekEnum = today.getDayOfWeek(); // как перечисление

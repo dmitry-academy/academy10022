@@ -1,6 +1,8 @@
 package by.academy.lesson2;
 
-public class Cat {
+import by.academy.lesson7.oop.classwork.Animal;
+
+public class Cat extends Animal {
 	private int age;
 	private String nickname;
 
@@ -71,6 +73,5 @@ public class Cat {
 		builder.append("]");
 		return builder.toString();
 	}
-	
 
 }
