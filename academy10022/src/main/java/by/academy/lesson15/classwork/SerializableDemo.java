@@ -13,13 +13,12 @@ public class SerializableDemo {
 	public static void main(String[] args) {
 
 		User user = new User("SuperAdmin", "qwerty");
-		try (BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(
-				new FileOutputStream("src\\io\\user.txt"));
 
-				ObjectOutputStream osu = new ObjectOutputStream(bufferedOutputStream)) {
-			osu.writeObject("test");
-			osu.writeInt(1);
-			osu.writeObject(user);
+		try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("src\\io\\user.txt"));
+				ObjectOutputStream oos = new ObjectOutputStream(bos)) {
+			oos.writeObject("test");
+			oos.writeInt(1);
+			oos.writeObject(user);
 //			osu.writeObject(Integer.valueOf(123));
 
 		} catch (IOException ex) {
@@ -28,8 +27,8 @@ public class SerializableDemo {
 
 		try (BufferedInputStream br = new BufferedInputStream(new FileInputStream("src\\io\\user.txt"));
 				ObjectInputStream isu = new ObjectInputStream(br)) {
-			Integer i = isu.readInt();
 			String str = (String) isu.readObject();
+			Integer i = isu.readInt();
 			User user1 = (User) isu.readObject();
 			System.out.println(str);
 			System.out.println(i);

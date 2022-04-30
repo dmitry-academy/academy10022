@@ -1,12 +1,11 @@
 package by.academy.lesson12;
 
 public class MyException extends Exception {
+
+	private static final long serialVersionUID = 1L;
+	
 	private int detail;
 
-	/***
-	 * 
-	 * @author dmitrysc asdasdasd
-	 */
 	public MyException(int detail, String message) {
 		super(message);
 		this.detail = detail;

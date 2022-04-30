@@ -3,7 +3,6 @@ package by.academy.lesson12;
 public class FinallyUse {
 	// Выход из метода через исключение
 	public static void procA() {
-
 		try {
 			System.out.println("Внутри procA");
 			throw new RuntimeException("demo");
@@ -13,12 +12,13 @@ public class FinallyUse {
 	}
 
 	// Возврат изнутри try-блока
-	public static void procB() {
+	public static int procB() {
 		try {
 			System.out.println("Внутри procB");
-			return;
+			return 1;
 		} finally {
 			System.out.println("finally для procB ");
+			return 2;
 		}
 	}
 
@@ -38,7 +38,8 @@ public class FinallyUse {
 //		} catch (Exception e) {
 //			System.out.println("Исключение выброшено");
 //		}
-//		procB();
+//		int i = procB();
+//		System.out.println(i);
 		System.out.println("method main");
 		procC();
 	}

@@ -3,7 +3,9 @@ package by.academy.lesson12;
 public class ExceptionDemo1 {
 
 	public static void main(String[] args) throws MyException {
-		subRoutine();
+		int d = 0;
+		int a = 10 / d;
+//		subRoutine();
 	}
 
 	public static void subRoutine() throws ArithmeticException {

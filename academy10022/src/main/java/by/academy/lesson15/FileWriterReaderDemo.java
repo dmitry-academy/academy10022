@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Writer;
 
 public class FileWriterReaderDemo {
 	public static void main(String[] args) throws IOException {
@@ -13,7 +14,7 @@ public class FileWriterReaderDemo {
 			file.createNewFile();
 		}
 		try {
-			FileWriter fw = new FileWriter(file);
+			Writer fw = new FileWriter(file);
 
 			fw.write("Learn\nJava!\n");
 			fw.close();

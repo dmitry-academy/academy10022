@@ -5,7 +5,8 @@ public class ThrowDemo {
         try {
             throw new NullPointerException("demo");
         } catch (NullPointerException e) {
-            System.out.println("Перехвачено внутри doSomething.");
+            System.out.println("Перехвачено внутри doSomething." + e);
+            e.printStackTrace();
             throw e; // повторно возбудить исключение
         }
     }
