@@ -8,7 +8,7 @@ public class ConsumerDemo2 {
 		Consumer<String> printUpperCase = str -> System.out.println(str.toUpperCase());
 //		printUpperCase.accept("hello");
 
-		Consumer<String> printLowerCase = str -> System.out.println(str.substring(0, 2));
-		printUpperCase.andThen(printLowerCase).accept("Hello world");
+		Consumer<String> substringTwoChars = str -> System.out.println(str.substring(0, 2));
+		printUpperCase.andThen(substringTwoChars).accept("Hello world");
 	}
 }
