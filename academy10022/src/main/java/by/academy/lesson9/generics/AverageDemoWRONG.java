@@ -7,11 +7,11 @@ public class AverageDemoWRONG {
 		Average<Integer> iob = new Average<>(intArray);
 		Average<Double> dob = new Average<>(doubleArray);
 
-		if (iob.sameAvg(dob)) {
-			System.out.println("are the same.");
-		} else {
-			System.out.println("differ.");
-		}
+//		if (iob.sameAvg(dob)) {
+//			System.out.println("are the same.");
+//		} else {
+//			System.out.println("differ.");
+//		}
 
 	}
 }

@@ -23,4 +23,10 @@ public class LogitechMouse implements Mouse, Flyable {
 	public void eatCheese() {
 		System.out.println("Im not eating cheese");
 	}
+
+	@Override
+	public void fly() {
+		// TODO Auto-generated method stub
+		
+	}
 }

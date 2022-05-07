@@ -14,4 +14,10 @@ public class Robot implements Flyable, Moveable{
 		Moveable.super.stop();
 	}
 
+	@Override
+	public void fly() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

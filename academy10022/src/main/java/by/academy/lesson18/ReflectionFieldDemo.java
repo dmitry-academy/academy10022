@@ -1,6 +1,7 @@
 package by.academy.lesson18;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 import java.util.GregorianCalendar;
 
 public class ReflectionFieldDemo {
@@ -10,24 +11,27 @@ public class ReflectionFieldDemo {
 		GregorianCalendar calendar = new GregorianCalendar();
 		Class<GregorianCalendar> calendarClass = GregorianCalendar.class;
 		System.out.println(GregorianCalendar.BC);
-		
+
 		try {
 			Field bcField = calendarClass.getDeclaredField("BC");
 			bcField.setAccessible(true);
-
+			
+//			Field modifiersField = bcField.getClass().getDeclaredField("modifiers");
+//			modifiersField.setAccessible(true);
+//			modifiersField.setInt(bcField, bcField.getModifiers() & ~Modifier.FINAL);
+			int modifiers = bcField.getModifiers();
 			bcField.set(calendar, 9999); // output: 1233
 			System.out.println(GregorianCalendar.BC);
-
-
-		} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
+			System.out.println("Is private: " + Modifier.isPrivate(modifiers));
+		} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException  e) {
 			e.printStackTrace();
 		}
 //		Car car = new Car(500, "1233");
 //		Car car1 = new Car(100, "555");
 //		Vehicle cat = new Vehicle();
 //		Class<? extends Car> carClass = Car.class;
-//
-//		// Example 1
+
+		// Example 1
 //		try {
 //			Field serialNumberField = carClass.getDeclaredField("serialNumber");
 //			serialNumberField.setAccessible(true);
@@ -40,17 +44,17 @@ public class ReflectionFieldDemo {
 //			e.printStackTrace();
 //		}
 //
-//		// Example 2
+		// Example 2
 //		try {
 //			Field horsepowerField = carClass.getDeclaredField("horsepower");
-////			horsepowerField.setAccessible(true);
+//			horsepowerField.setAccessible(true);
 //			int horsepowerValue = horsepowerField.getInt(car);
 //			System.out.println(horsepowerValue);
 //		} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
 //			e.printStackTrace();
 //		}
 //
-//		// Example 3
+//		 Example 3
 //		try {
 //			Field horsepowerField = carClass.getDeclaredField("horsepower");
 //
