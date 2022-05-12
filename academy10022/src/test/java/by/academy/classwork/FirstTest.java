@@ -1,24 +1,39 @@
 package by.academy.classwork;
 
+import static junit.framework.Assert.assertEquals;
+
+import org.junit.Ignore;
 import org.junit.Test;
 
 import by.academy.junit.Calculator;
-import junit.framework.Assert;
 
 public class FirstTest {
 
 	@Test
 	public void mathDivide() {
-		Assert.assertEquals(5, Calculator.divide(10, 2));
+		assertEquals(5, Calculator.divide(10, 2));
 	}
 
 	@Test(expected = ArithmeticException.class)
 	public void testException() {
-
+		int i = 10 / 0;
 	}
 
-	@Test(timeout = 1000)
+	@Ignore
+	@Test(timeout = 1)
 	public void timeout() {
-		//todo count 10000
+
+		for (Integer i = 0; i < 2000; i++) {
+			System.err.println(i);
+		}
+	}
+	
+	@Ignore
+	@Test(timeout = 1)
+	public void ignore() {
+
+		for (Integer i = 0; i < 2000; i++) {
+			System.err.println(i);
+		}
 	}
 }
