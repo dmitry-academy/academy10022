@@ -14,6 +14,8 @@ public class JoinDemo {
 //			System.out.println(e.getMessage());
 //		}
 //		System.out.println(Thread.currentThread().getState());
+		a.join();
+
 		b.start();
 //		try {
 			b.join();
@@ -21,7 +23,7 @@ public class JoinDemo {
 //			System.out.println(e.getMessage());
 //		}
 		c.start();
-//		c.join();
+		c.join();
 		System.out.println("test");
 		System.out.println(Thread.currentThread().getState());
 	}

@@ -6,10 +6,13 @@ public class DeamonDemo {
 			DaemonThread t1 = new DaemonThread(i + " thread 1 p10");
 			DaemonThread t2 = new DaemonThread(i + " thread 2 p5");
 			DaemonThread t3 = new DaemonThread(i + " thread 3 p1");
+//			t1.setDaemon(true);
+//			t2.setDaemon(true);
+//			t3.setDaemon(true);
 
-			t1.setPriority(10);
-			t2.setPriority(5);
-			t3.setPriority(1);
+//			t1.setPriority(10);
+//			t2.setPriority(5);
+//			t3.setPriority(1);
 			t1.start();
 			t2.start();
 
