@@ -1,7 +1,9 @@
 package by.academy.lesson9.generics;
 
-public class Average<T extends Number & Comparable<T>> {
-	
+import java.io.Serializable;
+
+public class Average<T extends Number & Comparable<Number> & Serializable> {
+
 	private T[] array;
 
 	public Average(T[] array) {
@@ -10,7 +12,7 @@ public class Average<T extends Number & Comparable<T>> {
 
 	public double average() {
 		double sum = 0.0;
-		
+
 		for (T value : array) {
 			sum += value.doubleValue();
 		}
@@ -18,11 +20,7 @@ public class Average<T extends Number & Comparable<T>> {
 		return sum / array.length;
 	}
 
-//	public boolean sameAvg(Average<?> dob) {
-//		return average() == dob.average();
-//	}
-	
-	public boolean sameAvg(Average<T> dob) {
+	public boolean sameAvg(Average<?> dob) {
 		return average() == dob.average();
 	}
 }

@@ -1,5 +1,5 @@
 package by.academy.lesson9.generics.classwork;
 
-public class Dog extends Animal {
+public abstract class Animal {
 
 }

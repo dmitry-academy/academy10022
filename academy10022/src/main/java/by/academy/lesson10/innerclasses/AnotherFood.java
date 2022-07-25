@@ -1,19 +1,16 @@
 package by.academy.lesson10.innerclasses;
 
+import java.util.Date;
+
 public class AnotherFood {
 	public static void main(String[] args) {
-		Potato potato = new Potato() {
-			public void fry() {
-				System.out.println("Жарим картошку в анонимном классе.");
-			}
 
+		Date str = new Date() {
 			@Override
-			public void peel() {
-				System.out.println("Чистим картошку в анонимном классе.");
-				fry();
+			public int getDate() {
+				return Integer.MIN_VALUE;
 			}
 		};
-		potato.peel();
 		// Ошибка компиляции
 //		 potato.fry();
 	}

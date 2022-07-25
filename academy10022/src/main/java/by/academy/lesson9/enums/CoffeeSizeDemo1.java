@@ -1,19 +1,20 @@
 package by.academy.lesson9.enums;
 
-import by.academy.lesson9.enums.Coffee3.CoffeeSize;
-
 public class CoffeeSizeDemo1 {
 	public static void main(String[] args) {
 
-		CoffeeSize coffeeSize = CoffeeSize.HUGE;
+		CoffeeSize coffeeSize = CoffeeSize.BIG;
 
 		if (coffeeSize == CoffeeSize.BIG) {
 			System.out.println(coffeeSize);
 		} else {
 			System.out.println("НЕ БИГ");
 		}
+		System.out.println(coffeeSize.getMl());
+		System.out.println(coffeeSize.getMl());
+		System.out.println(coffeeSize.getMl());
 
 		CoffeeSize coffeeSize1 = CoffeeSize.valueOf("BIG");
-		System.out.println(coffeeSize1);
+		System.out.println(coffeeSize1.getClass());
 	}
 }

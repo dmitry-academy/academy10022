@@ -35,4 +35,18 @@ public class Deal {
 	public void setProducts(Product[] products) {
 		this.products = products;
 	}
+
+	public void deal() {
+		double summ = 0;
+		for (Product p : products) {
+			summ += p.getProductPrice();
+		}
+
+		double buyerMoney = buyer.getMoney() - summ;
+		buyer.setMoney(buyerMoney);
+		
+		double sellerMoney = seller.getMoney() + summ;
+		seller.setMoney(sellerMoney);
+
+	}
 }

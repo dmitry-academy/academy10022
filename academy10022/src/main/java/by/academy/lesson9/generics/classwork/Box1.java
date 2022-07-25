@@ -1,16 +1,16 @@
 package by.academy.lesson9.generics.classwork;
 
-public class Box<T> {
+public class Box1<T> {
 
 	private T[] items;
 
-	@SuppressWarnings("unchecked")
-	public Box() {
+	public Box1() {
 		super();
 		this.items = (T[]) new Object[10];
 	}
 
-	public Box(T[] items) {
+	public Box1(T[] items) {
+		super();
 		this.items = items;
 	}
 
@@ -18,7 +18,7 @@ public class Box<T> {
 		return items;
 	}
 
-	public void setItems(T[] items) {
+	public void setItem(T[] items) {
 		this.items = items;
 	}
 

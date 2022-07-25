@@ -3,21 +3,21 @@ package by.academy.lesson9.generics.classwork;
 public class BoxDemo {
 
 	public static void main(String[] args) {
-		Cat cat1 = new Cat();
-
-		CatBox catBox = new CatBox(cat1);
-
-		System.out.println(catBox.getCat());
-
-		Box<Cat> catBox1 = new Box<>();
-
-		System.out.println(catBox1.getItems());
-
+		Cat cat = new Cat();
 		Dog dog = new Dog();
 
-		Dog[] dogs = new Dog[10];
+		Box<Animal> catBox1 = new Box<>(cat);
+		
+		Box<Dog> dogBox1 = new Box<>(dog);
 
-		Box<?>[] dogBox = new Box[10];
+		System.out.println(catBox1.getItem());
+		System.out.println(dogBox1.getItem());
+
+//		Dog dog = new Dog();
+//
+//		Dog[] dogs = new Dog[10];
+//
+//		Box1<?>[] dogBox = new Box1[10];
 
 //		System.out.println(dogBox.getItem());
 	}

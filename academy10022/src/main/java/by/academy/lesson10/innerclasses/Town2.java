@@ -9,6 +9,8 @@ public class Town2 {
 
 		class Street {
 			public void printAddress() {
+				postCode = "sadfdasD";
+//				houseNumber++; 
 				System.out.println("PostCode is " + postCode);
 				System.out.println("House Number is " + houseNumber);
 			}
@@ -16,6 +18,7 @@ public class Town2 {
 
 		Street street = new Street();
 		street.printAddress();
+		System.out.println(postCode);
 	}
 
 	public static void main(String[] args) {

@@ -4,6 +4,7 @@ import by.academy.lesson9.enums.Coffee3.CoffeeSize;
 
 public class CoffeeSizeCompareTo {
 	public static void main(String[] args) {
+
 		CoffeeSize bigCup = CoffeeSize.BIG;
 		CoffeeSize hugeCup = CoffeeSize.HUGE;
 		CoffeeSize anotherBigCup = CoffeeSize.BIG;

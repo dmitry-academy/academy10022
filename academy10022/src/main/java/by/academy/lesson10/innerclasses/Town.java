@@ -1,11 +1,12 @@
 package by.academy.lesson10.innerclasses;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Town {
 	private String postCode = "33333";
 	private int x = 3;
-	private List<Street> streets;
+	private List<Street> streets = new ArrayList<>();
 
 	public void printAllStreetX() {
 		for (Street s : streets) {
@@ -13,7 +14,16 @@ public class Town {
 		}
 	}
 
-	private class Street {
+	public Town() {
+		super();
+	}
+
+	public Town(int x) {
+		super();
+		this.x = x;
+	}
+
+	protected class Street {
 		private int house;
 		private int houseNumber = 2;
 
@@ -29,11 +39,11 @@ public class Town {
 		public class House {
 			private int x = 0;
 
-			public void test(int y) {
-				System.out.println(x); //1
-				System.out.println(this.x);//0
-				System.out.println(Street.this.houseNumber);//2
-				System.out.println(Town.this.x);//3
+			public void test(int x) {
+				System.out.println(x); // 1
+				System.out.println(this.x);// 0
+				System.out.println(houseNumber);// 2
+				System.out.println(Town.this.x);// 3
 			}
 		}
 
@@ -57,15 +67,17 @@ public class Town {
 		Town town = new Town();
 
 		Town.Street street1 = town.new Street();
+
 		Town.Street street2 = new Town().new Street();
 
 		Town.Street.House house = new Town().new Street().new House();
+		System.out.println(house.getClass());
 		house.test(1);
 //		town.createStreet();
 //		street1.printAddress();
 //		street2.printAddress();
 //
-//		street1.testX(1);
+		street1.testX(1);
 	}
 
 	public void createStreet() {
